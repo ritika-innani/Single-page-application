@@ -1,0 +1,376 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Varela Round', sans-serif;
+	-webkit-box-sizing: border-box;
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both;
+	display:table;
+}
+.row{
+    max-width: 1030px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.inner{
+	margin:auto;
+	width:75%;
+    text-align:center;
+}
+
+.column{
+    padding: 0 15px;
+	position:relative;
+	float:left;
+}
+.row .three, .three{
+	width:25%;
+}
+.row .four, .four{
+	width:33.33%
+}
+.row .six, .six{
+	width:50%;
+}
+
+.row .twelve, .twelve{
+	width:100%;
+}
+.centered{
+	float:none;
+	margin:0 auto;
+}
+
+a{
+	text-decoration:none;
+	color: black;;
+	cursor:pointer;
+	outline:none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/******  Header   ******/
+
+header{
+	position : relative;
+	background-color: #E8634E;
+	height:80px;
+}
+
+header .section{
+	max-width:1030px;
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+	height:100%;
+    padding: 0 15px;
+    color: white;
+}
+
+#logo{
+	display: inline-block;
+}
+
+.navIcon{
+    display:none;
+}
+
+.fa .fa-navicon{
+    font-size: 25px;
+}
+
+nav{
+	position: relative;
+	top: 15px;
+    float: right;
+    right: 10px;
+}
+
+#navList{
+	list-style:none;
+	
+}
+
+.listItem{
+	float:left;
+	padding: 15px;
+    margin-left: 15px;
+    border: 1px solid transparent;
+}
+
+.listItem:hover{
+    border: 1px solid black;
+}
+
+
+/****** Main  Body******/
+
+.container{
+    background-color: #E5E2D3;    
+    color: #E8634E;
+}
+
+.layer1 .inner{
+    position: relative;
+}
+
+
+#artistPic{
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+   
+}
+
+#artistPic{
+    background-image: url('../Images/girl-image1.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+@media screen and (max-width: 900px){
+    #artistPic{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.artistDesc{
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
+
+.artistDesc h2{
+    line-height: 1.2em;
+    font-size: 65px;
+}
+
+.artistDesc h3{
+    line-height: 1.2em;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 900px){
+    .artistDesc h2{
+    line-height: 1.2em;
+    font-size: 60px;
+    }
+
+    .artistDesc h3{
+        line-height: 1.2em;
+        font-size: 40px;
+    }
+}
+
+.layer2, .layer3, .layer4{
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.divider{
+    border-bottom: 3px solid grey;
+    width: 500px;
+}
+
+#aboutTag, #portfolioTag, contactTag{
+    padding: 15px 0;
+}
+
+#aboutTag h3, #portfolioTag h3, #contactTag h3{
+    line-height: 1.2em;
+    font-size: 30px;
+}
+
+.description h4{
+    line-height: 1.2em;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.description p{
+        text-align: justify;
+}
+
+.portfolioContainer{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    position:relative;
+    display: inline-block;
+}
+
+.layer3 .portfolio{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portfolio img{
+    width: 280px;
+    height: 280px;
+}
+
+.portfolioDesc{
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    border-radius: 50%;
+    background-color: rgba(198, 196, 173, 0.8);
+    text-align: center;
+    padding: 14%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    text-align: left;
+}
+
+.portfolioDesc h4{
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.portfolioDesc:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 820px){
+    .layer3 .portfolio{
+        width: 250px;
+        height: 250px;}
+    
+    .portfolio img{
+        width: 250px;
+        height: 250px;}
+}
+
+.layer3 .four.column{
+    margin-top: 20px;
+}
+
+.layer3 .seperator{
+    border-bottom: 3px solid #E8634E;
+    width: 55px;
+    position: absolute;
+    left: 42%;
+    bottom: -2%;
+}
+
+.layer4{
+    background-color: #E8634E;
+    max-width: 100%;
+    margin-top: 80px;
+    color: white;
+}
+
+#contactTag{
+    padding-top:40px;
+}
+
+.layer4 .row{
+    margin-top: 15px;
+}
+
+.layer4 .row h5{
+    line-height: 1.2em;
+    font-size: 20px;
+}
+
+#contactDetails p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#contactForm{
+    margin-top:10px;
+}
+
+#contactForm li{
+    width: 50%;
+}
+
+#contactForm input{
+    width: 210px;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#contactForm textarea{
+    width: 210px;
+    height: 115px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    resize:none;
+}
+
+@media screen and (max-width: 900px){
+    #contactForm input{
+        width: 200px;}
+    #contactForm textarea{
+        width: 200px;}
+}
+
+@media screen and (max-width: 850px){
+    #contactForm input{
+        width: 180px;}
+    #contactForm textarea{
+        width: 180px;}
+}
+
+.submitButton{
+    position: relative;
+}
+
+#formButton{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 30px;
+    border: none;
+    color: #E8634E;
+    width: 50px;
+    padding: 5px;
+    background: white;
+    cursor: pointer;
+}
+
+footer{
+    padding-top: 50px;
+    background-color: #E8634E;
+    color: #fff;
+    text-align: center;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+#socialButtons .fa{
+    font-size: 50px;
+    color: #fff;
+}
+    
